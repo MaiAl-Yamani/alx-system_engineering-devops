@@ -1,2 +1,2 @@
 #!/bin/bash
-find -H . -empty -print | cut -d "/" -f 2
+find . -empty | cut -d "/" -f 2
