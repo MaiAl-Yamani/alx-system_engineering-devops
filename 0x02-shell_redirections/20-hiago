@@ -1,0 +1,2 @@
+#!/bin/bash
+sed 's/c//g' | sed 's/C//g'
