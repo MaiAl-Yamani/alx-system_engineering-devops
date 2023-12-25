@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displays To infinity and beyond indefinitely and I am invincible!!! when receiving a SIGTERM.
+
+trap 'echo "I am invincible!!!"' 15
+while true
+do
+	echo "to infinity and beyond"
+	sleep 2
+done
