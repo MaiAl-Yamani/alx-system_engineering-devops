@@ -8,24 +8,12 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    url = f'https://www.reddit.com/r/{subreddit}/about.json'
-    headers = {'User-Agent': 'by u/x'}  # Set a custom User-Agent to avoid issues
-
-    response = requests.get(url, headers=headers, allow_redirects=False)
-
-    if response.status_code == 200:
-        data = response.json()
-        subscribers = data['data']['subscribers']
-        return subscribers
-    else:
+    """returns the number of subscribers from the Reddit API"""
+    r = requests.get(r'https://www.reddit.com/r/{}/about.json'
+            .format(subreddit), headers={'User-agent': 'x'},
+            allow_redirects=False)
+    if r.status_code != 200:
         return 0
-
-if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        subreddit = sys.argv[1]
-        num_subscribers = number_of_subscribers(subreddit)
-        print(num_subscribers)
+    json = r.json()
+    data = json.get('data')
+    return data.get('subscribers', 0)
