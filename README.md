@@ -12,7 +12,7 @@ Shell scripting, Linux system administration, networking, and web infrastructure
 
 ## Repository Structure
 
-Exercises are organized by topic in separate directories. Each directory contains the scripts and s upporting files for its respective tasks.
+Exercises are organized by topic in separate directories. Each directory contains the scripts and supporting files for its respective tasks.
 
 ## Tools & Technologies
 
