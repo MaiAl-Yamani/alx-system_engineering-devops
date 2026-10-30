@@ -36,6 +36,6 @@ Most folders contain standalone exercises rather than one application. Browse a 
 
 ## Context
 
-These are **curriculum-based learning exercises**, not a production DevOps platform. The repository reflects practice with the tools and concepts above; it does not claim production infrastructure deployment experience.
+This repository is part of my ALX Software Engineering Programme and covers practical work in Linux, shell scripting, networking, system administration, and web infrastructure.
 
-Part of my ALX Software Engineering coursework. See also [Low-Level Programming](https://github.com/MaiAl-Yamani/alx-low_level_programming) and [Higher-Level Programming](https://github.com/MaiAl-Yamani/alx-higher_level_programming).
+Related repositories: [Low-Level Programming](https://github.com/MaiAl-Yamani/alx-low_level_programming) | [Higher-Level Programming](https://github.com/MaiAl-Yamani/alx-higher_level_programming)
